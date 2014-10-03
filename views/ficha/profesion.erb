@@ -1,0 +1,15 @@
+<div class="information_popup_container">
+	<div class="information">
+		<img src=<%= prof.img_path %> alt=<%= prof.name %>, id='icon' />
+	</div>
+	<div class="popup_information">
+		<h3><%= prof.name.capitalize %>
+			<br><br>
+			<img src=<%= prof.img_path %> alt=<%= prof.name %>, id='icon3' />
+		</h3>
+		<h3>Aprendizajes</h3>
+		<% prof.aprendiz.each do |a| %>
+			<li><%= a %></li>
+		<% end %>
+	</div>
+</div>
